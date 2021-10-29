@@ -1,7 +1,8 @@
-import xml.etree.ElementTree as ElementTree
-from interval import Interval
-import sys
 import os
+import sys
+import xml.etree.ElementTree as ElementTree
+
+from interval import Interval
 
 script_name, read_file = sys.argv
 root = ElementTree.parse(os.getcwd() + '/' + read_file).getroot()
